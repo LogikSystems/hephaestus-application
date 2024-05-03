@@ -1,0 +1,75 @@
+{
+    "name": "logiksystems/hephaestus-application",
+    "description": "A skeleton of an hephaestus application. Based on top of Laravel-Zero; provided with Hephaestus Framework.",
+    "keywords": [
+        "application",
+        "hephaestus-framework",
+        "laravel",
+        "laravel zero",
+        "console",
+        "cli"
+    ],
+    "homepage": "https://github.com/logiksystems/hephaestus-application",
+    "type": "project",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/logiksystems/hephaestus-application/issues",
+        "source": "https://github.com/logiksystems/hephaestus-application"
+    },
+    "authors": [
+       {
+            "name": "bcts",
+            "homepage": "https://github.com/bc-ts"
+       }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/log": "^10.0",
+        "laravel-zero/framework": "^10.0",
+        "logiksystems/hephaestus-framework": "dev-main",
+        "nunomaduro/termwind": "^1.0.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.15.1",
+        "mockery/mockery": "^1.6.11",
+        "pestphp/pest": "^2.34.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "bin": [
+        "application"
+    ],
+    "scripts": {
+        "post-create-project-cmd": [
+            "cp .env.example .env",
+            "@publish-config"
+        ],
+        "post-install-cmd": [
+            "@publish-config"
+        ],
+        "publish-config" : [
+            "@php ./kernel vendor:publish --provider \"Hephaestus\\Framework\\Providers\\HephaestusServiceProvider\""
+
+        ]
+    }
+}
