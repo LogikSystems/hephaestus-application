@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a454f6b1919cc0d80b80f16efb9f313c",
+    "content-hash": "b688c60246fc7db861140ee8efe48181",
     "packages": [
         {
             "name": "brick/math",
@@ -2478,16 +2478,16 @@
         },
         {
             "name": "logiksystems/hephaestus-framework",
-            "version": "dev-main",
+            "version": "0.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/LogikSystems/hephaestus-framework.git",
-                "reference": "9b2ffbce908ec57f98edc49f89c370173d98d487"
+                "reference": "0e037e2f5433044562d696f29688d071570f741c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LogikSystems/hephaestus-framework/zipball/9b2ffbce908ec57f98edc49f89c370173d98d487",
-                "reference": "9b2ffbce908ec57f98edc49f89c370173d98d487",
+                "url": "https://api.github.com/repos/LogikSystems/hephaestus-framework/zipball/0e037e2f5433044562d696f29688d071570f741c",
+                "reference": "0e037e2f5433044562d696f29688d071570f741c",
                 "shasum": ""
             },
             "require": {
@@ -2496,7 +2496,7 @@
                 "illuminate/log": "^10.0.0",
                 "laravel-zero/framework": "^10.0.0",
                 "nunomaduro/termwind": "^1.0.0",
-                "php": "^8.2.0",
+                "php": "^8.1.0",
                 "react/async": "^4.2",
                 "simplito/elliptic-php": "^1.0",
                 "team-reflex/discord-php": "^7.3"
@@ -2507,7 +2507,6 @@
                 "mockery/mockery": "^1.6",
                 "pestphp/pest": "^2.22"
             },
-            "default-branch": true,
             "bin": [
                 "hephaestus-framework"
             ],
@@ -2551,7 +2550,7 @@
                 "issues": "https://github.com/logiksystems/hephaestus-framework/issues",
                 "source": "https://github.com/logiksystems/hephaestus-framework"
             },
-            "time": "2024-05-03T11:12:11+00:00"
+            "time": "2024-05-03T14:24:43+00:00"
         },
         {
             "name": "mollie/polyfill-libsodium",
@@ -9266,9 +9265,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "logiksystems/hephaestus-framework": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

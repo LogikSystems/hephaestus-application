@@ -26,7 +26,7 @@
         "php": "^8.1",
         "illuminate/log": "^10.0",
         "laravel-zero/framework": "^10.0",
-        "logiksystems/hephaestus-framework": "dev-main",
+        "logiksystems/hephaestus-framework": "^0.0",
         "nunomaduro/termwind": "^1.0.0"
     },
     "require-dev": {
